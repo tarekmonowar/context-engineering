@@ -1,45 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LLM Chat: AI SDK, OpenRouter API, HTML, CSS, JS, Vite</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <div id="app">
-    <main id="chat-container">
-      <div id="messages-container"></div>
-      <div id="counters">
-        <span id="total-tokens-counter">0 total tokens</span>
-        <span class="separator">•</span>
-        <span id="context-tokens-counter">0 context tokens</span>
-      </div>
-      <div id="summary-card" class="hidden">
-        <div id="summary-header">
-          <span>Context Summary</span>
-          <span id="summary-toggle">▼</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LLM Chat: AI SDK, OpenRouter API, HTML, CSS, JS, Vite</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <main id="chat-container">
+        <div id="messages-container"></div>
+        <div id="counters">
+          <span id="total-tokens-counter">0 total tokens</span>
+          <span class="separator">•</span>
+          <span id="context-tokens-counter">0 context tokens</span>
         </div>
-        <div id="summary-content" class="collapsed">
-          <!-- Summary text appears here -->
+        <div id="summary-card" class="hidden">
+          <div id="summary-header">
+            <span>Context Summary</span>
+            <span id="summary-toggle">▼</span>
+          </div>
+          <div id="summary-content" class="collapsed">
+            <!-- Summary text appears here -->
+          </div>
         </div>
-      </div>
-    </main>
-    
-    <footer>
-      <form id="chat-form">
-        <input 
-          type="text" 
-          id="message-input" 
-          placeholder="Type a message..." 
-          autocomplete="off"
-        >
-      <button type="submit" id="send-button" 
-      aria-label="Send message">↑</button>
-      </form>
-    </footer>
-  </div>
-  
-  <script type="module" src="./main.js"></script>
-</body>
+      </main>
+
+      <footer>
+        <form id="chat-form">
+          <input
+            type="text"
+            id="message-input"
+            placeholder="Type a message..."
+            autocomplete="off"
+          />
+          <button type="submit" id="send-button" aria-label="Send message">
+            ↑
+          </button>
+        </form>
+      </footer>
+    </div>
+
+    <script type="module" src="./main.ts"></script>
+  </body>
 </html>

@@ -1,4 +1,6 @@
-const initialMessages = [
+import type { ChatMessage } from "./utils";
+
+const initialMessages: ChatMessage[] = [
   {
     role: "user",
     content:
